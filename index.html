@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Independent Project</title>
+</head>
+<body>
+    <h1>CHARISMA</h1>
+   
+    <div class="image-grid">
+        <div class="image-item">
+            <img src="images/DD1.jpg" alt="Image 1">
+        </div>
+        <div class="image-item">
+            <img src="images/DD8.jpg" alt="Image 2">
+        </div>
+        <div class="image-item">
+            <img src="images/DD4.jpg" alt="Image 3">
+        </div>
+        <div class="image-item">
+            <img src="images/DD9.jpg" alt="Image 4">
+        </div>
+    </div>
+    <div class="info-container">
+        <div class="info">
+            Dungeons & Dragons, or D&D for short, is a tabletop role-playing game that has been around for over 40 years. <br>
+            D&D gained a reputation for being a game of fantasy and imagination, <br>
+            where players create their own characters and embark on epic adventures together. <br>
+            While D&D is a game, it also provides valuable lessons that can be applied in real life
+            Charisma measures your ability to interact effectively with others. <br>
+            It includes such factors as confidence and eloquence, <br>
+            and it can represent a charming or commanding personality. 
+            A Charisma check might arise when you try to influence or entertain others, <br>
+            when you try to make an impression or tell a convincing lie, or when you are navigating a tricky social situation. <br>
+            The Deception, Intimidation, Performance, and Persuasion skills reflect aptitude in certain kinds of Charisma checks.
+        </div>
+    </div>
+    <div class="cler-float"></div>
+
+    <div class="slideshow-container">
+        <h3 style="color: orangered;">Some life lessons you can learn from playing Dungeons & Dragons</h3>
+        <div class="slideshow">
+            <div class="lesson-slide fade">
+                <p>
+                    1. Teamwork. In D&D, players must work together as a team to accomplish a common goal. Each player has a unique role to play, and each character has their own strengths and weaknesses. This requires players to communicate and collaborate effectively to overcome challenges and complete campaigns. Many D&D stories are not made for the individual, so forming a "party" or group is critical. Working together may bring some initial conflict, but groups norm quickly into a high-performing team. The same principle applies in real life. Teamwork and collaboration are essential to success.
+                </p>
+            </div>
+            <div class="lesson-slide fade">
+                <p>
+                    2. Problem-Solving. D&D is a game of imagination, and it requires players to think outside the box to solve problems. Whether it’s navigating a dungeon or outsmarting a monster, players are encouraged to be creative and come up with unique solutions. In real life, creative problem-solving is a valuable skill that can help you overcome obstacles. By exploring new solutions, you can find innovative ways to solve problems and achieve success.
+                </p>
+            </div>
+            <div class="lesson-slide fade">
+                <p>
+                    3. Diversity. Team diversity creates strength. You'll never survive in D&D without a party composed of different skills. Whether a wizard, thief, or cleric, everyone has skills to tackle distinct situations. Everyone has a role, and no one player can be successful by themselves.
+                </p>
+            </div>
+        </div>
+        <div class="navigation">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+   
+    <div class="container">
+        <div class="row" id="skills">
+            <div class="col-md-3 skill-container">
+                <button class="btn btn-primary skill-button">Deception</button>
+                <i class="fas fa-smile like-button" data-skill="Deception"></i>
+                <span class="like-count">0</span>
+            </div>
+            <div class="col-md-3 skill-container">
+                <button class="btn btn-primary skill-button">Intimidation</button>
+                <i class="fas fa-trophy like-button" data-skill="Intimidation"></i>
+                <span class="like-count">0</span>
+            </div>
+            <div class="col-md-3 skill-container">
+                <button class="btn btn-primary skill-button">Performance</button>
+                <i class="fas fa-fire like-button" data-skill="Performance"></i>
+                <span class="like-count">0</span>
+            </div>
+            <div class="col-md-3 skill-container">
+                <button class="btn btn-primary skill-button">Persuasion</button>
+                <i class="fas fa-heart like-button" data-skill="Persuasion"></i>
+                <span class="like-count">0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="comment-section">
+        <h2>SAY SOMETHING</h2>
+        <div class="comment">
+            <textarea class="comment-input" placeholder="Leave a comment" id="comment"></textarea>
+            <button class="comment-submit" data-skill="Deception">Submit</button>
+        </div>
+    </div>
+    <div id="comments"></div>
+    <script src="script.js"></script>
+</body>
+</html>
