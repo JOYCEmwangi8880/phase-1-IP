@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
 
-    // Event listener for comment submission
+    // Event listener for "comment" submission
     const commentSubmitButtons = document.querySelectorAll('.comment-submit');
     commentSubmitButtons.forEach(button => {
       button.addEventListener('click', () => {
