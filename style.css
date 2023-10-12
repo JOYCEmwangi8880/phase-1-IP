@@ -1,6 +1,6 @@
 body {
     width: 100vw;
-    height: 230vh;
+    height: 224vh;
     background-image: url(images/BG.jpg);
     background-position: center;
     background-size: cover;
@@ -13,7 +13,7 @@ h1 {
     font-weight: bolder;
     text-align: center;
     margin: 20px 0;
-    animation: colorChange 3s linear infinite;
+    animation: colorChange 2s linear infinite;
 }
 
 @keyframes colorChange {
@@ -80,8 +80,8 @@ h1 {
     padding: 40px;
    
  color: white;
-    font-size: x-large;
-    font-weight: bold;
+    font-size:x-large;
+    font-weight: bolder;
    
    
     
@@ -173,13 +173,25 @@ h1 {
 }
 
 .comment-section {
-    padding: 40px;
+    padding: 30px;
     background-color:aquamarine;
-    max-width: 300px;
+    max-width: 200px;
     position: fixed;
     bottom: 10px;
-    right: 10px;
+    right: 700px;
+    animation: scaleHover 1s alternate infinite;
+    transform-origin: center;
+    
 }
+@keyframes scaleHover {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
 h2{
     color:green;
 }
