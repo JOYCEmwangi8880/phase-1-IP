@@ -34,20 +34,19 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
 
-    // Event listener for "comment" submission
-    const commentSubmitButtons = document.querySelectorAll('.comment-submit');
-    commentSubmitButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const skillName = button.getAttribute('data-skill');
-        const commentInput = button.previousElementSibling;
-        const commentText = commentInput.value;
-        comments[skillName].push(commentText);
-        commentInput.value = ''; // Clear the input field
-        
-        // Log the comment to the console
-        console.log(`Comment for ${skillName}: ${commentText}`);
-      });
-    });
+   // Event listener for comment submission
+const commentSubmitButtons = document.querySelectorAll('.comment-submit');
+commentSubmitButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const commentInput = button.previousElementSibling;
+    const commentText = commentInput.value;
+    commentInput.value = ''; // Clear the input field
+    
+    // Log the comment to the console
+    console.log(`Comment: ${commentText}`);
+  });
+});
+
 
     // Function to display comments for a skill
     function displayComments(skillName) {
