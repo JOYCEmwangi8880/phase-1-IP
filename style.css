@@ -1,7 +1,7 @@
 body {
     width: 100vw;
     height: 230vh;
-    background-image: url(images/DD7.jpg);
+    background-image: url(images/BG.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@ h1 {
 
 @keyframes colorChange {
     0% {
-        color: whitesmoke;
+        color: purple;
     }
     25% {
         color: red;
