@@ -43,7 +43,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const commentText = commentInput.value;
         comments[skillName].push(commentText);
         commentInput.value = ''; // Clear the input field
-        displayComments(skillName); // Call the function to display comments
+        
+        // Log the comment to the console
+        console.log(`Comment for ${skillName}: ${commentText}`);
       });
     });
 
